@@ -260,7 +260,7 @@ call s:hi("Special", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("SpecialChar", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("SpecialComment", s:nord8_gui, "", s:nord8_term, "", s:italicize_comments, "")
 call s:hi("Statement", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", s:italic, "")
 call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
@@ -539,7 +539,7 @@ call s:hi("jsGlobalNodeObjects", s:nord8_gui, "", s:nord8_term, "", s:italic, ""
 hi! link jsBrackets Delimiter
 hi! link jsFuncCall Function
 hi! link jsFuncParens Delimiter
-hi! link jsThis Keyword
+" hi! link jsThis Keyword
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
@@ -590,3 +590,13 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+" Changes
+call s:hi("xmlTag", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("xmlTagName", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("xmlEndTag", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("jsThis", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("jsObjectKey", s:nord3_gui_brightened[20], "", s:nord5_term, "", s:italic, "")
+call s:hi("jsClassProperty", s:nord5_gui, "", s:nord5_term, "", s:italic, "")
+"
+" End changes
