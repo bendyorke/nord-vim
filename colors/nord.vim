@@ -465,7 +465,7 @@ hi! link vimFunc Function
 hi! link vimFunction Function
 hi! link vimUserFunc Function
 
-call s:hi("xmlAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("xmlAttrib", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
 call s:hi("xmlCdataStart", s:nord3_gui, "", s:nord3_term, "", "bold", "")
 call s:hi("xmlNamespace", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link xmlAttribPunct Delimiter
